@@ -1,4 +1,4 @@
-# Restaurant Reviews Summarization and Dish Recommendation
+# Intelligent Restaurant Recommendation Q&A System using RAG
 
 ## Problem Statement
 
