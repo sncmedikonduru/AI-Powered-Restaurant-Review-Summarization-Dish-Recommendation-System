@@ -1,4 +1,4 @@
-# Intelligent Restaurant Recommendation Q&A System using RAG
+# AI-Powered Chatbot for Restaurant Recommendations Using RAG
 
 ## Problem Statement
 
