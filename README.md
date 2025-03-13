@@ -1,45 +1,53 @@
-# AI-Powered Chatbot for Restaurant Recommendations Using RAG
+# FlavorFinderAI 🍽️ – AI-Powered Restaurant Recommendation System
 
-## Problem Statement
+## 🚀 Project Overview
+FlavorFinderAI is an **AI-driven restaurant recommendation system** that leverages **GPT-Neo for text generation** and **BERT embeddings for intelligent restaurant matching**. This project processes **real-world Yelp data** to provide **personalized dining suggestions** based on location, cuisine preferences, and customer review sentiment.
 
-In this project, we aim to build a **Restaurant Reviews Summarization and Dish Recommendation System**. The system processes a dataset of restaurant reviews and automatically summarizes them, while ensuring that key information such as **restaurant names** and **recommended dishes** is preserved in the final output.
+By integrating **state-of-the-art deep learning models**, this system showcases **advanced NLP techniques, AI-driven recommendations, and real-world data applications**.
 
-### Goals:
-1. **Summarization**: Summarize customer reviews for restaurants, condensing the key information into a coherent summary.
-2. **Extraction**: Ensure that important information like restaurant names and dish names are extracted and included in the summary.
-3. **Recommendations**: Provide dish recommendations based on reviews.
+## 💡 Why This Project Stands Out
+✅ **AI-Powered Recommendations** – Uses **BERT embeddings** for restaurant matching and **GPT-Neo for natural language responses**.  
+✅ **Real-World Data Processing** – Analyzes **Yelp business & review dataset** (Find dataset at https://www.kaggle.com/datasets/yelp-dataset/yelp-dataset) to generate intelligent suggestions.  
+✅ **Semantic Search with Deep Learning** – Enhances restaurant retrieval using **vectorized text representations**.  
+✅ **Scalable & Customizable** – Designed for future integration with **chatbots & real-time location-based recommendations**.  
 
-## Project Workflow
+## 🔧 Tech Stack
+- **Deep Learning**: GPT-Neo (EleutherAI), BERT embeddings  
+- **Programming**: Python (pandas, numpy, transformers, torch)  
+- **NLP Processing**: Tokenization, embeddings, cosine similarity  
+- **Data Handling**: Yelp dataset, JSON, pandas  
+- **Machine Learning**: AI-driven restaurant recommendations  
 
-### 1. Data Extraction
-- Extract **restaurant names** from the dataset (assumed to be available in a column called `name`).
-- Extract **recommended dishes** from a column such as `recommended_dishes`.
+## 📂 Project Structure
+```
+📁 FlavorFinderAI
+ ├── 📄 FlavorFinderAI.ipynb  # Jupyter Notebook with AI pipeline
+ ├── 📁 data/                 # Yelp dataset files
+ ├── 📄 README.md             # Project documentation
+```
 
-### 2. Text Generation
-- Use **GPT-Neo** to generate a summary of restaurant reviews.
+## 🛠️ How to Run
+1. Clone the repository:
+   ```bash
+   git clone <repository_url>
+   ```
+2. Install dependencies:
+   ```bash
+   pip install torch transformers pandas numpy sentence-transformers
+   ```
+3. Load the Yelp dataset and run the Jupyter Notebook step by step.
 
-### 3. Summarization
-- Use **BART** to summarize the generated text and condense key insights from reviews.
+## 🎯 Future Enhancements
+- 🤖 **Fine-Tuned GPT-Neo** for more human-like restaurant dialogue.  
+- 🔍 **Sentiment-Based Filtering** using advanced BERT-based models.  
+- 📍 **Real-Time AI Recommendations** based on user location & dining habits.  
 
-### 4. Post-Processing
-- Ensure that the **restaurant names** and **recommended dishes** are preserved in the final summary.
+## 💼 Why This Matters for Startups & Hiring Managers
+This project **demonstrates expertise in AI, NLP, and deep learning**, showcasing:  
+✅ **Large Language Models (GPT-Neo) for personalized recommendations**  
+✅ **BERT embeddings for semantic similarity & restaurant ranking**  
+✅ **Real-world dataset processing & AI-driven decision-making**  
+✅ **Scalable ML models applicable to commercial recommendation engines**  
 
-## Dataset
-
-The dataset should contain at least the following columns:
-- **name**: The name of the restaurant.
-- **cleaned_review**: The cleaned reviews of the restaurant.
-- **recommended_dishes**: The dishes recommended by customers (optional, can be extracted from reviews if not available directly).
-
-## Key Components
-
-### Summarization and Text Generation
-- **GPT-Neo**: Used for generating raw text summaries based on restaurant reviews.
-- **BART**: Used for condensing and summarizing generated text.
-
-### Entity Extraction
-- **Restaurant Names**: Extracted directly from the dataset.
-- **Dish Names**: Extracted from the dataset or inferred from reviews.
-
-### Grammar and Refinement
-- (Optional) Use **LanguageTool** for grammar correction to produce more polished summaries.
+---
+⭐ If you're looking for an **AI & NLP specialist** who can build real-world applications, let's connect! 🚀  
